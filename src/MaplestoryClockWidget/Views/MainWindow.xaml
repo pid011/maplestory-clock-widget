@@ -31,9 +31,9 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Content="CLOCK"
-                FontFamily="Dotum"
-                FontSize="11"
-                Foreground="#FFDD22" />
+                FontFamily="Dotumche"
+                FontSize="10"
+                Foreground="Gold" />
         </Grid>
         <StackPanel Grid.Row="1">
             <TextBlock
@@ -44,8 +44,19 @@
                 FontFamily="Dotum"
                 FontSize="15"
                 FontWeight="Bold"
-                Foreground="#FFFFFF"
+                Foreground="{Binding TimeColor}"
                 Text="{Binding Time}"
+                TextWrapping="Wrap" />
+            <TextBlock
+                x:Name="dateText"
+                Margin="0,5,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="Dotum"
+                FontSize="12"
+                FontWeight="Regular"
+                Foreground="LightGray"
+                Text="{Binding Date}"
                 TextWrapping="Wrap" />
         </StackPanel>
 
