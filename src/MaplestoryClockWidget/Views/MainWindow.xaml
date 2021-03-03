@@ -10,6 +10,7 @@
     Title="{x:Static properties:Resources.Title}"
     Width="210"
     Height="74"
+    d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowViewModel}"
     AllowsTransparency="True"
     MouseLeftButtonDown="Window_MouseLeftButtonDown"
     ResizeMode="NoResize"
